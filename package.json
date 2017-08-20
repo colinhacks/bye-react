@@ -1,7 +1,7 @@
 {
-  "name": "testmoduleone",
+  "name": "bye-react",
   "version": "1.0.0",
-  "description": "first test module",
+  "description": "Migrate from React to Preact with one command.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
