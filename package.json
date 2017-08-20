@@ -1,6 +1,6 @@
 {
   "name": "bye-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Migrate from React to Preact with one command.",
   "main": "index.js",
   "directories": {
