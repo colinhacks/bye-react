@@ -4,7 +4,7 @@ More specifically, this tool switches the project over to [preact-compat](https:
 
 ## Disclaimers
 1.  Requires usage of Webpack, Browserify, or the Babel React preset (or any combination thereof). If you don’t use any of these, this won't work. Also you should probably be using one of these.
-2. Not guaranteed to work in all cases. May interact in interesting and unfortunate ways with non-standard build pipelines (e.g. if you dynamically generate .babelrc or package.json, you're using a non-current version of React, etc).
+2. Not guaranteed to work in all cases. You should be using a version of React that is compatible with the current stable release (@15.6.1). May interact in interesting and unfortunate ways with non-standard build pipelines (e.g. if you dynamically generate .babelrc or package.json, etc).
 3. Will delete comments inside package.json and .babelrc files. These files contain JSON-compliant data. To add the aliases, bye-react reads in the JSON, modifies it, and writes it back to disk. Comments are lost en route. If these are important to you then don't use bye-react.
 
 ## Usage
