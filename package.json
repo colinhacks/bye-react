@@ -1,0 +1,31 @@
+{
+  "name": "testmoduleone",
+  "version": "1.0.0",
+  "description": "first test module",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "bye-react": "./lib/index.js",
+    "bye-react-undo": "./lib/undo.js"
+  },
+  "dependencies": {
+    "cjson": "^0.5.0",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "colors": "^1.1.2",
+    "commander": "^2.11.0",
+    "preact": "^8.2.1",
+    "preact-compat": "^3.17.0",
+    "rimraf": "^2.6.1"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
