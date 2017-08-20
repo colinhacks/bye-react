@@ -29,7 +29,8 @@ or
 `bye-react --undo`
 
 ## How It Works
-1. Installs preact and preact-compat (obviously) via npm (or yarn, if a Yarn lockfile is detected)
-2. Checks for usage of [Webpack](https://github.com/webpack). If detected,  an alias is added to webpack.config.js. Specifically [these lines](lib/mod/webpackAliasLines.js) are appended to the end of the file.
-3. Checks for usage of [Babel’s React preset](https://babeljs.io/docs/plugins/preset-react/). If detected, [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver) is installed and used to create an alias in .babelrc
-4. Checks for usage of Browserify. If detected, [aliasify](https://github.com/benbria/aliasify) is installed and used to create an alias in package.json.
+1. Uninstalls react and react-dom.
+2. Installs preact and preact-compat (obviously) via npm (or yarn, if a Yarn lockfile is detected)
+3. Checks for usage of [Webpack](https://github.com/webpack). If detected,  an alias is added to webpack.config.js. Specifically [these lines](lib/mod/webpackAliasLines.js) are appended to the end of the file.
+4. Checks for usage of [Babel’s React preset](https://babeljs.io/docs/plugins/preset-react/). If detected, [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver) is installed and used to create an alias in .babelrc
+5. Checks for usage of Browserify. If detected, [aliasify](https://github.com/benbria/aliasify) is installed and used to create an alias in package.json.
