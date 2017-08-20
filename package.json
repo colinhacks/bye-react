@@ -12,8 +12,7 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "bye-react": "./lib/index.js",
-    "bye-react-undo": "./lib/undo.js"
+    "bye-react": "./lib/index.js"
   },
   "dependencies": {
     "cjson": "^0.5.0",

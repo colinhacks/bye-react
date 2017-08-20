@@ -10,18 +10,26 @@ More specifically, this tool switches the project over to [preact-compat](https:
 ## Usage
 #### Install
 `npm install -g bye-react` 
+
 or
+
 `yarn global add bye-react`
+
 #### Usage
 `cd ~/your/react/project`
+
 `bye-react`
+
 #### Undoing
 When you first run `bye-react` backups are made of all config files modified by this tool. Running these undo commands restores these files to their original state. It also uninstalls preact and reinstalls react and react-dom.
 `bye-react -u`
+
 or
+
 `bye-react --undo`
+
 ## How It Works
-1. installs preact and preact-compat (obviously) via npm (or yarn, if a Yarn lockfile is detected)
+1. Installs preact and preact-compat (obviously) via npm (or yarn, if a Yarn lockfile is detected)
 2. Checks for usage of [Webpack](https://github.com/webpack). If detected,  an alias is added to webpack.config.js. Specifically [these lines](lib/mod/webpackAliasLines.js) are appended to the end of the file.
 3. Checks for usage of [Babel’s React preset](https://babeljs.io/docs/plugins/preset-react/). If detected, [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver) is installed and used to create an alias in .babelrc
 4. Checks for usage of Browserify. If detected, [aliasify](https://github.com/benbria/aliasify) is installed and used to create an alias in package.json.
