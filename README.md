@@ -1,6 +1,9 @@
 # bye-react
+
+Made by [@colinmcd94](https://twitter.com/colinmcd94)
+
 Migrate your project from [React](https://github.com/facebook/react) to [Preact](https://github.com/developit/preact) with a single command. 
-More specifically, this tool switches the project over to [preact-compat](https://github.com/developit/preact-compat), the "compatibility layer that makes React-based modules work with Preact, without any code changes".
+More specifically, this tool switches the project over to [preact-compat](https://github.com/developit/preact-compat), the "compatibility layer that makes React-based modules work with Preact, without any code changes". After running the command below, no code changes should be necessary for your project to run successfully.
 
 ## Disclaimers
 1.  Requires usage of Webpack, Browserify, or the Babel React preset (or any combination thereof). If you don’t use any of these, this won't work. Also you should probably be using one of these.
