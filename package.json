@@ -9,8 +9,8 @@
   "scripts": {
     "test": "test"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Colin McDonnell <colinmcd@mit.edu>",
+  "license": "MIT",
   "bin": {
     "bye-react": "./lib/index.js"
   },
